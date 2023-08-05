@@ -1,0 +1,1184 @@
+@font-face {
+  font-family: 'Futura-Bold';
+  src: url("./fonts/Futura-Bold/Futura-Bold-5.eot");
+  src: url("./fonts/Futura-Bold/Futura-Bold-5.eot?#iefix") format("embedded-opentype"), url("./fonts/Futura-Bold/Futura-Bold-5.woff2") format("woff2"), url("./fonts/Futura-Bold/Futura-Bold-5.woff") format("woff"), url("./fonts/Futura-Bold/Futura-Bold-5.svg#Futura-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura-Medium';
+  src: url("./fonts/Futura-Medium/Futura-Medium-6.eot");
+  src: url("./fonts/Futura-Medium/Futura-Medium-6.eot?#iefix") format("embedded-opentype"), url("./fonts/Futura-Medium/Futura-Medium-6.woff2") format("woff2"), url("./fonts/Futura-Medium/Futura-Medium-6.woff") format("woff"), url("./fonts/Futura-Medium/Futura-Medium-6.svg#Futura-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 50px 0;
+
+}
+
+.logo .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo .wrapper img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  animation: rotate 4s linear infinite;
+}
+
+.logo .wrapper .hamburger {
+  display: none;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 0.85;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.menu {
+  background: #FBB03B;
+}
+
+.menu .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .wrapper .menu-list ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.menu .wrapper .menu-list ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 0 20px;
+  font-family: "Futura-Bold";
+  transition: all .3s;
+  position: relative;
+}
+
+.menu .wrapper .menu-list ul li a:hover {
+  transform: scale(1.1);
+  color: #009245;
+}
+
+.menu .wrapper .email p {
+  color: #fff;
+  font-family: "Futura-Bold";
+}
+
+.menu .wrapper .email p a {
+  color: #fff;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.menu .wrapper .email p a:hover {
+  text-decoration: underline;
+}
+
+.menu .close {
+  display: none;
+}
+
+.hero-box {
+  margin-top: 0px;
+}
+
+.hero-box .wrapper {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.hero-box .wrapper .avatar {
+  width: 500px;
+  margin-right: 80px;
+}
+
+.hero-box .wrapper .avatar img {
+  width: 100%;
+}
+
+.hero-box .wrapper .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-box .wrapper .text .title {
+  margin-bottom: 90px;
+}
+
+.hero-box .wrapper .text .title img {
+  width: 100%;
+}
+
+.hero-box .wrapper .text .title span {
+  color: #009245;
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: "Futura-Bold";
+}
+
+.hero-box .wrapper .text .desc {
+  line-height: 40px;
+}
+
+.hero-box .wrapper .text .desc img {
+  width: 100%;
+}
+
+.hero-box .wrapper .text .desc span {
+  color: #4E4C4C;
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-family: "Futura-Medium";
+}
+
+.hero-box .discover {
+  margin-top: 80px;
+  margin-bottom: 140px;
+}
+
+.hero-box .discover .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-box .discover a {
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-box .discover a img {
+  width: 150px;
+  display: block;
+  transition: all .3s;
+}
+
+.hero-box .discover a img:hover  {
+  /*transform: scale(1.1);
+  animation: kf-s2t 1s linear .8s infinite alternate both running;*/
+  -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.hero-box .discover a span {
+  display: block;
+  color: #FBB03B;
+  font-size: 40px;
+  margin-top: 30px;
+  font-family: "Futura-Medium";
+  transition: all .3s;
+}
+
+.hero-box .discover a span:hover{
+  /*animation: kf-s2t 1s linear .8s infinite alternate both running;*/
+  -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+@keyframes kf-s2t {
+ 0% {
+  transform: translateY(5px);
+ }
+
+ 10% {
+  transform: translateY(10px);
+ }
+
+ 25% {
+  transform: translateY(15px);
+ }
+
+
+
+ 50% {
+  transform: translateY(20px);
+ }
+
+
+
+ 100% {
+  transform: translateY(0);
+ }
+}
+
+
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+
+.divder {
+  margin: 40px 0;
+}
+
+.divder img {
+  width: 100%;
+}
+
+.products .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products .wrapper .item {
+  width: 45%;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.products .wrapper .item a {
+  text-decoration: none;
+}
+
+.products .wrapper .item a:hover img {
+  transform: scale(1.04);
+
+}
+
+.products .wrapper .item img {
+  width: 100%;
+  transition: all .5s;
+}
+
+.products .wrapper .item .title {
+  color: #4E4C4C;
+  font-size: 36px;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  font-family: "Futura-Bold";
+}
+
+.products .wrapper .item .sub_title {
+  color: #009245;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 28px;
+  font-family: "Futura-Medium";
+}
+
+.products .wrapper .item:last-child {
+  margin-right: 0;
+}
+
+.about .wrapper h4 {
+  font-size: 40px;
+  font-family: "Futura-Bold";
+  color: #4E4C4C;
+}
+
+.about .wrapper .about-desc p {
+  font-family: "Futura-Medium";
+  color: #6F6C6C;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.about .wrapper .btn {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background: #009245;
+  width: 250px;
+  color: #fff;
+  text-align: center;
+  font-family: "Futura-Bold";
+  border-radius: 15px;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.about .wrapper .btn a {
+  color: #fff;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.about .wrapper .btn a:hover {
+  text-decoration: underline;
+}
+
+.about .wrapper .contact h5 {
+  font-size: 40px;
+  font-family: "Futura-Bold";
+  color: #4E4C4C;
+  margin-bottom: 0;
+}
+
+.about .wrapper .contact p {
+  font-family: "Futura-Medium";
+  color: #6F6C6C;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.about .wrapper .contact p a {
+  color: #6F6C6C;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.about .wrapper .contact p a:hover {
+  text-decoration: underline;
+}
+
+.about .wrapper .icon {
+  margin: 60px 0;
+}
+
+.about .wrapper .icon img {
+  width: 45px;
+  height: 45px;
+  margin-right: 30px;
+}
+
+.footer {
+  background: #FBB03B;
+}
+
+.footer .wrapper {
+  color: #fff;
+  font-family: "Futura-Bold";
+  font-size: 20px;
+  text-align: center;
+  padding: 1px;
+}
+
+.portfolio .banner {
+  margin-top: 30px;
+
+}
+
+.portfolio .banner .wrapper .photo img {
+  width: 100%;
+}
+
+.portfolio .banner .wrapper .title {
+  color: #009245;
+  font-size: 50px;
+  font-family: "Futura-Bold";
+  text-align: center;
+  margin: 40px 0;
+}
+.portfolio .banner .wrapper .title a{
+  color: #009245;
+  font-family: "Futura-Bold";
+  text-decoration: none;
+}
+
+.portfolio .banner .wrapper .title a:hover{
+  text-decoration: underline;
+}
+
+.portfolio .banner .wrapper .sub_title {
+  font-family: "Futura-Medium";
+  font-size: 30px;
+  color: #4E4C4C;
+  text-align: center;
+  margin: 40px 0;
+}
+
+
+.portfolio .banner .wrapper .sub_title a{
+  color: #4E4C4C;
+  font-family: "Futura-Medium";
+  text-decoration: none;
+}
+
+.portfolio .banner .wrapper .sub_title a:hover{
+  text-decoration: underline;
+}
+
+
+
+.portfolio .banner .wrapper .desc a{
+  color: #6F6C6C;
+  font-family: "Futura-Medium";
+  text-decoration: none;
+}
+
+.portfolio .banner .wrapper .desc a:hover{
+  text-decoration: underline;
+}
+
+
+.portfolio .banner .wrapper .desc {
+  text-align: center;
+}
+
+.portfolio .banner .wrapper .desc p {
+  font-family: "Futura-Medium";
+  color: #6F6C6C;
+  line-height: 35px;
+  font-size: 18px;
+  margin-bottom: 70px;
+}
+
+
+.portfolio .banner .wrapper .link {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+.portfolio .banner .wrapper .link a {
+  display: inline-block;
+  color: #009245;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  text-align: center;
+  margin: 20px;
+  font-family: "Futura-Bold";
+  font-size: 22px;
+  transition: all .3s ;
+}
+.portfolio .banner .wrapper .link a:hover{
+  color: #f5ac05;
+}
+
+.center {
+  text-align: center;
+ }
+
+.portfolio .hr {
+  background: #FBB03B;
+  padding: 25px;
+  margin: 40px 0;
+}
+
+.portfolio .portfolio-lists {
+  margin-top: 70px;
+}
+
+.portfolio .portfolio-lists .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio .portfolio-lists .wrapper .item {
+  width: 50%;
+  margin-bottom: 10px;
+  transition: all .3s;
+}
+
+.portfolio .portfolio-lists .wrapper .item a img {
+  width: 100%;
+  transition: all .3s;
+}
+
+.portfolio .portfolio-lists .wrapper .item:nth-child(odd) {
+  display: flex;
+}
+
+.portfolio .portfolio-lists .wrapper .item:nth-child(even) {
+  position: relative;
+  top: 120px;
+}
+
+.portfolio .pagination {
+  margin-top: 120px;
+}
+
+.portfolio .pagination .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.portfolio .pagination .wrapper a {
+  text-transform: uppercase;
+  color: #FBB03B;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Futura-Bold";
+  display: flex;
+  align-items: center;
+}
+
+.portfolio .pagination .wrapper .prev span {
+  margin-right: 30px;
+}
+
+.portfolio .pagination .wrapper .next span {
+  margin-left: 30px;
+}
+
+.portfolio .pagination .wrapper .prev {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.portfolio .pagination .wrapper .prev span {
+  width: 30px;
+}
+
+.portfolio .pagination .wrapper .prev span img {
+  width: 30px;
+}
+
+.portfolio .pagination .wrapper .prev a {
+  padding-left: 40px;
+}
+
+.portfolio .pagination .wrapper .next {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.portfolio .pagination .wrapper .next span {
+  width: 30px;
+}
+
+.portfolio .pagination .wrapper .next span img {
+  width: 30px;
+}
+
+.portfolio .pagination .wrapper .next a {
+  padding-right: 40px;
+}
+
+
+
+
+
+
+
+/* details */
+
+.portfolio-content {}
+
+.portfolio-content .content {
+  width: 900px;
+  margin: 0 auto;
+  /* text-align: center; */
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #ddd;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+ 
+
+}
+
+.portfolio-content .wrapper {
+
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  padding: 30px;
+}
+
+.detail-title {
+  font-family: "Futura-Bold";
+  color: #666;
+  font-size: 36px;
+  margin: 30px 0;
+}
+
+.detail-sub-title {
+  font-family: "Futura-Bold";
+  color: #f5ac05;
+  margin: 10px 0;
+}
+
+.desc {
+  font-family: "Futura-Medium";
+  line-height: 1.7;
+  color: #666;
+  margin: 10px 0;
+}
+
+.green {
+  color: #009245;
+}
+
+.desc img {
+  max-width: 100%;
+}
+
+.desc ol {}
+
+.desc ol li {
+  font-family: "Futura-Medium";
+  margin: 10px 0;
+}
+
+
+
+
+/*Mobile only*/
+@media only screen and (min-width: 0px) and (max-width: 765px) {
+
+  /*Mobile only*/
+  body {
+    background: #fff;
+    overflow-x: hidden;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .logo {
+    padding: 20px;
+    margin: 0;
+  }
+
+  .logo .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo .wrapper img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    animation: rotate 3s linear infinite;
+  }
+
+  .logo .wrapper .hamburger {
+    display: block;
+  }
+
+  .logo .wrapper .hamburger i {
+    font-size: 3rem;
+    color: #009245;
+  }
+
+  .menu {
+    background: #FBB03B;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: .5s;
+  }
+
+  .menu .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menu .wrapper .menu-list {
+    width: 100%;
+  }
+
+  .menu .wrapper .menu-list ul {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu .wrapper .menu-list ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 20px;
+    font-family: "Futura-Bold";
+    transition: all .3s;
+    position: relative;
+  }
+
+  .menu .wrapper .menu-list ul li a:hover {
+    transform: scale(1);
+    color: #009245;
+  }
+
+  .menu .wrapper .email {
+    width: 100%;
+  }
+
+  .menu .wrapper .email p {
+    padding: 0 20px 20px;
+    color: #fff;
+    text-align: left;
+    font-family: "Futura-Bold";
+  }
+
+  .menu .hamburger {
+    display: none;
+  }
+
+  .menu .close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    z-index: 1000;
+  }
+
+  .show {
+    right: 0;
+  }
+
+  .hero-box .discover {
+    margin-top: 50px;
+  }
+
+  .hero-box .discover .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-box .discover a {
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-box .discover a img {
+    width: 60px;
+    display: block;
+    transition: all .3s;
+  }
+
+  .hero-box .discover a:hover img {
+    transform: scale(1.1);
+  }
+
+  .hero-box .discover a span {
+    display: block;
+    color: #FBB03B;
+    font-size: 1rem;
+    margin-top: 30px;
+    font-family: "Futura-Medium";
+  }
+
+  .products .wrapper .item {
+    width: 100%;
+  }
+
+  .about {
+    padding: 30px;
+  }
+
+  .about .wrapper h4 {
+    font-size: 30px;
+    font-family: "Futura-Bold";
+    color: #4E4C4C;
+  }
+
+  .about .wrapper .about-desc p {
+    font-family: "Futura-Medium";
+    color: #6F6C6C;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .about .wrapper .about-desc br {
+    display: none;
+  }
+
+  .about .wrapper .btn {
+    background: #009245;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    font-family: "Futura-Bold";
+    border-radius: 15px;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 20px;
+  }
+
+  .about .wrapper .contact h5 {
+    font-size: 30px;
+    font-family: "Futura-Bold";
+    color: #4E4C4C;
+    margin-bottom: 0;
+  }
+
+  .about .wrapper .contact p {
+    font-family: "Futura-Medium";
+    color: #6F6C6C;
+    line-height: 30px;
+    font-size: 16px;
+  }
+
+  .about .wrapper .icon {
+    margin: 60px 0;
+  }
+
+  .about .wrapper .icon img {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+  }
+
+  .portfolio .banner {
+    margin-top: 30px;
+  }
+
+  .portfolio .banner .wrapper .photo img {
+    width: 100%;
+  }
+
+  .portfolio .banner .wrapper .title {
+    color: #009245;
+    font-size: 50px;
+    font-family: "Futura-Bold";
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .portfolio .banner .wrapper .sub_title {
+    font-family: "Futura-Medium";
+    font-size: 30px;
+    color: #4E4C4C;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .portfolio .banner .wrapper .desc {
+    padding: 20px;
+  }
+
+  .portfolio .banner .wrapper .desc p {
+    font-family: "Futura-Medium";
+    color: #6F6C6C;
+    line-height: 35px;
+    font-size: 16px;
+    margin-bottom: 0;
+    text-align: justify;
+  }
+
+  .portfolio .banner .wrapper .desc br {
+    display: none;
+  }
+
+  .portfolio .hr {
+    background: #FBB03B;
+    padding: 25px;
+    margin: 40px 0;
+  }
+
+
+
+
+  /* details */
+
+  .portfolio-content {}
+
+
+  .portfolio-content .content {
+
+    width: 100%;
+    margin: 0 auto;
+
+  }
+
+  .portfolio-content .wrapper {
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px;
+    width: calc(100% - 60px);
+  }
+
+  .detail-title {
+    font-family: "Futura-Bold";
+    color: #666;
+    font-size: 18px;
+    margin: 30px 0;
+  }
+
+  .detail-sub-title {
+    font-family: "Futura-Bold";
+    color: #f5ac05;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .desc {
+    font-family: "Futura-Medium";
+    line-height: 1.7;
+    color: #666;
+    margin: 10px 0;
+  }
+
+  .green {
+    color: #009245;
+  }
+
+  .desc img {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .desc ol {}
+
+  .desc ol li {
+    font-family: "Futura-Medium";
+    margin: 10px 0;
+  }
+
+
+
+
+  .portfolio .portfolio-lists {
+    margin-top: 70px;
+  }
+
+  .portfolio .portfolio-lists .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px;
+    width: calc(100% - 20px);
+  }
+
+  .portfolio .portfolio-lists .wrapper .item {
+    width: 100%;
+    margin-bottom: 0px;
+    transition: all .3s;
+  }
+
+  .portfolio .portfolio-lists .wrapper .item a img {
+    width: 100%;
+    transition: all .3s;
+  }
+
+  .portfolio .pagination .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    flex-direction: column;
+  }
+
+  .portfolio .portfolio-lists .wrapper .item:nth-child(even) {
+    position: relative;
+    top: 0px;
+  }
+
+  .portfolio .pagination .wrapper a {
+    text-transform: uppercase;
+    color: #FBB03B;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Futura-Bold";
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .portfolio .pagination .wrapper .prev {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .portfolio .pagination .wrapper .prev a span {
+    width: 20px;
+  }
+
+  .portfolio .pagination .wrapper .prev a span img {
+    width: 30px;
+  }
+
+  .portfolio .pagination .wrapper .prev a {
+    padding-left: 40px;
+    display: flex;
+  }
+
+  .portfolio .pagination .wrapper .next {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  .portfolio .pagination .wrapper .next span {
+    width: 20px;
+  }
+
+  .portfolio .pagination .wrapper .next span img {
+    width: 100%;
+  }
+
+  .portfolio .pagination .wrapper .next a {
+    padding-right: 40px;
+  }
+
+  .portfolio-lists {
+    margin-top: 70px;
+  }
+
+  .portfolio-lists .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .portfolio-lists .wrapper .item {
+    width: 100%;
+    transition: all .3s;
+  }
+
+  .portfolio-lists .wrapper .item a img {
+    width: 100%;
+    transition: all .3s;
+  }
+
+  .pagination .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+  }
+
+  .pagination .wrapper a {
+    text-transform: uppercase;
+    color: #FBB03B;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Futura-Bold";
+  }
+
+  .pagination .wrapper .prev {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .pagination .wrapper .prev span {
+    width: 30px;
+  }
+
+  .pagination .wrapper .prev span img {
+    width: 100%;
+  }
+
+  .pagination .wrapper .prev a {
+    padding-left: 40px;
+  }
+
+  .pagination .wrapper .next {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .pagination .wrapper .next span {
+    width: 30px;
+  }
+
+  .pagination .wrapper .next span img {
+    width: 100%;
+  }
+
+  .pagination .wrapper .next a {
+    padding-right: 40px;
+  }
+}
